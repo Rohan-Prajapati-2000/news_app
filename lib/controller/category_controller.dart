@@ -26,7 +26,14 @@ class CategoryController extends GetxController {
         final jsonData = json.decode(response.body);
         final List<dynamic> articles = jsonData['articles'];
 
-        newsList.assignAll(articles.map((article) => NewsModel.fromJson(article)).toList());
+        // Filter out news items with urlToImage as null
+        final List<NewsModel> filteredNews = articles
+            .map((article) => NewsModel.fromJson(article))
+            .where((news) => news.urlToImage != null)
+            .toList();
+
+        newsList.assignAll(filteredNews);
+
       } else {
         errorMessage('Failed to load news with status code: ${response.statusCode}');
       }

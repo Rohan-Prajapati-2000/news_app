@@ -87,6 +87,7 @@ class _HomeNewsListState extends State<HomeNewsList> {
         ));
       },
       child: Card(
+        color: Colors.red.shade200,
         child: Padding(
           padding: const EdgeInsets.symmetric(
               vertical: SSizes.defaultSpace / 2,

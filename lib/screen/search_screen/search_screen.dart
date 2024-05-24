@@ -16,11 +16,13 @@ class SearchScreen extends StatelessWidget {
     final controller = Get.put(SearchControllers());
     return Scaffold(
       appBar: AppBar(
-        title: Text('Search News'),
+        centerTitle: true,
+        title: Text('Search News', style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white)),
+        backgroundColor: Colors.red,
       ),
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: SSizes.defaultSpace),
+          padding: const EdgeInsets.symmetric(horizontal: SSizes.defaultSpace/2, vertical: SSizes.defaultSpace),
           child: Column(
             children: [
               TextFormField(

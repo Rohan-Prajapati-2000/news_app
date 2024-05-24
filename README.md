@@ -1,16 +1,23 @@
-# news
+About News App
+Our news app is easy to use and has a lot of interesting news from different places. You can read
+about local and world news, sports, entertainment, and tech stuff. It's simple to find the news you
+want with our search feature. We only show news from trusted sources, so you can be sure it's
+reliable. Whether you want to stay updated on what's happening or learn more about a specific topic,
+our app has everything you need for accurate and interesting news.<br><br>
 
-A new Flutter project.
+# How to run this application in your system
 
-## Getting Started
+How to run this application in your system
 
-This project is a starting point for a Flutter application.
+Step-1 => Go pubspec.yaml file and implement all dependencies.<br>
+Step-2 => Open your terminal and run => flutter run --multidex.<br>
+Step-3 => Now you can connect you phone or you can run in emulator by clicking run button.<br><br>
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+# If you are not able to run this application then you can directly download this application by below link<br>
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+https://drive.google.com/file/d/1vAAbBNoAnSbfmHerw3w5DOoBlBIy5yx2/view?usp=sharing
+
+Thanks!!
+
+

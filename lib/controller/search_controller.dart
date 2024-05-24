@@ -22,7 +22,13 @@ class SearchControllers extends GetxController {
         final jsonData = jsonDecode(response.body);
         final List<dynamic> articles = jsonData['articles'];
 
-        searchResult.assignAll(articles.map((article) => NewsModel.fromJson(article)).toList());
+        // Filter out articles where urlToImage is not null
+        final List<NewsModel> filteredNews = articles
+            .map((article) => NewsModel.fromJson(article))
+            .where((news) => news.urlToImage != null)
+            .toList();
+
+        searchResult.assignAll(filteredNews);
       } else {
         SLoaders.errorSnackBar(title: 'Failed to load news with status code: ${response.statusCode}');
       }

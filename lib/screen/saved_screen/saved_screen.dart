@@ -26,7 +26,9 @@ class _SavedScreenState extends State<SavedScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Saved News'),
+        centerTitle: true,
+        title: Text('Saved News', style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white)),
+        backgroundColor: Colors.red,
       ),
       body: ListView.builder(
         itemCount: savedItems.length,
@@ -48,6 +50,7 @@ class _SavedScreenState extends State<SavedScreen> {
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 8),
               child: Card(
+                color: Colors.red.shade200,
                 child: Padding(
                   padding: const EdgeInsets.symmetric(
                       horizontal: SSizes.defaultSpace / 1.8,

@@ -10,6 +10,11 @@ class CategoriesScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        appBar: AppBar(
+          centerTitle: true,
+          title: Text('Category Screen', style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white)),
+          backgroundColor: Colors.red,
+        ),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
